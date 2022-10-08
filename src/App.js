@@ -56,10 +56,10 @@ And here. | Okay. | I think we get it.
   return (
       <div className="App">  
         <div class="row parent text-center bg-dark ">
-          <h2 class="name bg-dark">MARKDOWN PREVIEWER</h2>         
+          <h1 class="h1 bg-dark">MARKDOWN PREVIEWER</h1>         
           &nbsp;        
-          <div class="row float-child bg-dark ">          
-            <h4 class="small-name bg-dark">EDITOR</h4>
+          <div class="row float-child bg-danger ">          
+            <h2 class="h2 bg-dark">EDITOR</h2>
             <textarea id="editor" class="box-text bg-light" rows={40} 
               onChange={(event) => {
                 setText(event.target.value);
@@ -67,8 +67,8 @@ And here. | Okay. | I think we get it.
               value={text}>
             </textarea>
           </div>                
-          <div class="row float-child  bg-dark">          
-            <h4 class="small-name bg-dark">PREVIEWER</h4>           
+          <div class="row float-child  bg-warning">          
+            <h2 class="h2 bg-dark">PREVIEWER</h2>           
             <div 
               id="preview" class="box-text bg-light" 
               dangerouslySetInnerHTML = {{
